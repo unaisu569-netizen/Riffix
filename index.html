@@ -1227,5 +1227,24 @@
       <script src="js/jquery.magnific-popup.min.js"></script>
       <!-- Main js -->
       <script src="js/main.js"></script>
+	   <!-- Voice Search JavaScript -->
+<script>
+function startVoiceSearch() {
+    const recognition = new (
+        window.SpeechRecognition ||
+        window.webkitSpeechRecognition
+    )();
+
+    recognition.lang = "en-IN";
+
+    recognition.onresult = function(event) {
+        document.getElementById("search").value =
+            event.results[0][0].transcript;
+    };
+
+    recognition.start();
+}
+</script>
+
    </body>
 </html>
