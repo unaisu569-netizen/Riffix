@@ -2435,3 +2435,11 @@ footer {
     font-size: 1.8rem;
   }
 }
+.read-more {
+    display: inline-block;
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
